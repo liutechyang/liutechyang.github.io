@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[RoseHA(9.0)for Linux Q&A Demo01]]></title>
+    <url>%2FRoseHA-9-0-for-Linux-Q-A-Demo01%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[RoseMirrorHAScript]]></title>
     <url>%2FRoseMirrorHAScript%2F</url>
     <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
+    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
+    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+        <category>RoseMirrorHA</category>
+      </categories>
+      <tags>
+        <tag>双机</tag>
+        <tag>集群</tag>
+        <tag>应用切换</tag>
+        <tag>Q&amp;A</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[RoseMirrorHA(5.0)for Window监控脚本配置解析]]></title>
@@ -50,9 +71,23 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[RoseHAScript]]></title>
+    <url>%2FRoseHAScript%2F</url>
+    <content type="text"><![CDATA[此博客内容适用于实际生产系统，请根据实际情况修改调整。 SybaseScriptDemo01: 12345678910111213141516171819202122su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP&quot; &amp;# ## &quot;sleep SEC(S)&quot; means how many seconds agent wait for sybase ## to start, change &quot;30&quot; to seconds your sybase start use ## # sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP_BS&quot; &amp; sleep 10 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ&quot; &amp; sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ_BS&quot; &amp; sleep 10fi$&#123;out&#125; &quot;[INFO] Start shell &lt;$0&gt; finished.&quot;]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+      </categories>
+      <tags>
+        <tag>双机</tag>
+        <tag>集群</tag>
+        <tag>脚本</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[RoseMirrorHA5.0安装配置维护手册]]></title>
     <url>%2FRoseMirrorHA5.0%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%BB%B4%E6%8A%A4%E6%89%8B%E5%86%8C%2F</url>
-    <content type="text"><![CDATA[快速安装：链接：https://pan.baidu.com/s/1VHVG1cPmwGsOdfOUmPrKoQ提取码：bw6d复制这段内容后打开百度网盘手机App，操作更方便哦 应用配合：链接：https://pan.baidu.com/s/1hHKGKKpBLtJTiKZJC4GcNg提取码：ptmz复制这段内容后打开百度网盘手机App，操作更方便哦 维护文档：链接：https://pan.baidu.com/s/18rofkaI3bvZfnI-gtD4N5w提取码：ap33复制这段内容后打开百度网盘手机App，操作更方便哦 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+    <content type="text"><![CDATA[快速安装：链接：https://pan.baidu.com/s/1VHVG1cPmwGsOdfOUmPrKoQ提取码：bw6d复制这段内容后打开百度网盘手机App，操作更方便哦 应用配合：链接：https://pan.baidu.com/s/1hHKGKKpBLtJTiKZJC4GcNg提取码：ptmz复制这段内容后打开百度网盘手机App，操作更方便哦 维护文档：链接：https://pan.baidu.com/s/18rofkaI3bvZfnI-gtD4N5w提取码：ap33 复制这段内容后打开百度网盘手机App，操作更方便哦 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
       <categories>
         <category>Cluster</category>
         <category>Rose</category>
@@ -74,20 +109,6 @@
       <tags>
         <tag>双机</tag>
         <tag>集群</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[RoseHAScript]]></title>
-    <url>%2FRoseHAScript%2F</url>
-    <content type="text"><![CDATA[此博客内容适用于实际生产系统，请根据实际情况修改调整。 SybaseScriptDemo01: 12345678910111213141516171819202122su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP&quot; &amp;# ## &quot;sleep SEC(S)&quot; means how many seconds agent wait for sybase ## to start, change &quot;30&quot; to seconds your sybase start use ## # sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP_BS&quot; &amp; sleep 10 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ&quot; &amp; sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ_BS&quot; &amp; sleep 10fi$&#123;out&#125; &quot;[INFO] Start shell &lt;$0&gt; finished.&quot;]]></content>
-      <categories>
-        <category>Cluster</category>
-        <category>Rose</category>
-      </categories>
-      <tags>
-        <tag>双机</tag>
-        <tag>集群</tag>
-        <tag>脚本</tag>
       </tags>
   </entry>
 </search>
