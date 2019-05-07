@@ -394,6 +394,32 @@
 
       <h2 class="post-title">
         
+          <a class="post-title-link" href="/RoseMirrorHA-5-0-for-Window监控脚本配置解析/" itemprop="url">
+            
+              <span itemprop="name">RoseMirrorHA(5.0)for Window监控脚本配置解析</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-05-07T10:53:06+08:00" content="2019-05-07">
+          05-07
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
           <a class="post-title-link" href="/RoseMirrorHA5.0安装配置维护手册/" itemprop="url">
             
               <span itemprop="name">RoseMirrorHA5.0安装配置维护手册</span>
@@ -461,7 +487,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -519,7 +545,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1084,6 +1114,9 @@
       ta.setSelectionRange(0, code.length);
       ta.readOnly = false;
       var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
       
       ta.blur(); // For iOS
       $(this).blur();
