@@ -97,7 +97,7 @@
 
 
   <meta name="description" content="说明：   针对Window平台环境，集群切换过程中各种异常问题解析。">
-<meta name="keywords" content="双机,集群,Q&amp;A,应用切换">
+<meta name="keywords" content="Q&amp;A,双机,集群,应用切换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RoseMirrorHA(5.0)for Window Q&amp;A Demo01">
 <meta property="og:url" content="http://yoursite.com/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/index.html">
@@ -503,8 +503,11 @@
         <p>说明：<br>   针对Window平台环境，集群切换过程中各种异常问题解析。</p>
 <a id="more"></a>
 <h2 id="Q1-SQLserver服务停止不了，死循环。"><a href="#Q1-SQLserver服务停止不了，死循环。" class="headerlink" title="Q1: SQLserver服务停止不了，死循环。"></a>Q1: SQLserver服务停止不了，死循环。</h2><p>切换过程中，SQLserver服务停止不了，死循环。<br><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA停止应用失败导致切换不了.png" alt></p>
-<h2 id="A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。"><a href="#A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。" class="headerlink" title="A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。"></a>A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。</h2><h2 id="Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。"><a href="#Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。" class="headerlink" title="Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。"></a>Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。</h2><p><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常1.png" alt><br><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常2.png" alt></p>
-<h2 id="A2-经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件-360-和系统防火墙后，问题解决。"><a href="#A2-经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件-360-和系统防火墙后，问题解决。" class="headerlink" title="A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。"></a>A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。</h2><h2 id="Q3：-Mirror同步驱动报错："><a href="#Q3：-Mirror同步驱动报错：" class="headerlink" title="Q3： Mirror同步驱动报错："></a>Q3： Mirror同步驱动报错：</h2><p><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常3.png" alt></p>
+<h2 id="A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。"><a href="#A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。" class="headerlink" title="A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。"></a>A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。</h2><h2 id="Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。-集群服务均正常。"><a href="#Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。-集群服务均正常。" class="headerlink" title="Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。 集群服务均正常。"></a>Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。 集群服务均正常。</h2><p><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常1.png" alt><br><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常2.png" alt></p>
+<h2 id="A2-经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha-sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件-360-和系统防火墙后，重装集群软件，问题依然未解决。-通过替换mirrorha驱动，问题依然存在。。。-最终通过降级到rose-mirror-ha-4-4版本后，问题解决。-实际系统是-window-server-2003-x32bit系统。"><a href="#A2-经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha-sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件-360-和系统防火墙后，重装集群软件，问题依然未解决。-通过替换mirrorha驱动，问题依然存在。。。-最终通过降级到rose-mirror-ha-4-4版本后，问题解决。-实际系统是-window-server-2003-x32bit系统。" class="headerlink" title="A2: 经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha.sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件(360)和系统防火墙后，重装集群软件，问题依然未解决。  通过替换mirrorha驱动，问题依然存在。。。 最终通过降级到rose mirror ha 4.4版本后，问题解决。  实际系统是 window server  2003 x32bit系统。"></a>A2: 经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha.sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件(360)和系统防火墙后，重装集群软件，问题依然未解决。  通过替换mirrorha驱动，问题依然存在。。。 最终通过降级到rose mirror ha 4.4版本后，问题解决。  实际系统是 window server  2003 x32bit系统。</h2><h2 id="Q3：-Mirror同步驱动报错："><a href="#Q3：-Mirror同步驱动报错：" class="headerlink" title="Q3： Mirror同步驱动报错："></a>Q3： Mirror同步驱动报错：</h2><p><img src="/RoseMirrorHA-5-0-for-Window-Q-A-Demo01/RoseMirrorHA数据同步状态异常3.png" alt></p>
+<hr>
+<hr>
+<p>提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。<br>电话&amp;微信 ：18046508828<br>QQ ： 1710484168<br>软件技术支持范围<br>数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等<br>数据库：Oracle,Mysql,Sql server,sybase…<br>系统：Window，Linux,Aix…<br>双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…<br>杀毒：瑞星，卡巴，Symantec SEP,诺顿…<br>虚拟化:Vmware,Hyper-v…<br>备份：SymantecBE,NBU…<br>信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。</p>
 
       
     </div>
@@ -552,11 +555,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/Q-A/" rel="tag"># Q&A</a>
+          
             <a href="/tags/双机/" rel="tag"># 双机</a>
           
             <a href="/tags/集群/" rel="tag"># 集群</a>
-          
-            <a href="/tags/Q-A/" rel="tag"># Q&A</a>
           
             <a href="/tags/应用切换/" rel="tag"># 应用切换</a>
           
@@ -571,8 +574,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/RoseMirrorHA-5-0-for-Window监控脚本配置解析/" rel="next" title="RoseMirrorHA(5.0)for Window监控脚本配置解析">
-                <i class="fa fa-chevron-left"></i> RoseMirrorHA(5.0)for Window监控脚本配置解析
+              <a href="/RoseMirrorHA-5-0-for-Linux配合Oracle12c配置文档-v2-0-2015-04-29/" rel="next" title="RoseMirrorHA 5.0 for Linux配合Oracle12c配置文档_v2.0-2015-04-29">
+                <i class="fa fa-chevron-left"></i> RoseMirrorHA 5.0 for Linux配合Oracle12c配置文档_v2.0-2015-04-29
               </a>
             
           </div>
@@ -581,8 +584,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/RoseMirrorHAScript/" rel="prev" title="RoseMirrorHAScript">
-                RoseMirrorHAScript <i class="fa fa-chevron-right"></i>
+              <a href="/RoseMirrorHA-5-0-for-Window监控脚本配置解析/" rel="prev" title="RoseMirrorHA(5.0)for Window监控脚本配置解析">
+                RoseMirrorHA(5.0)for Window监控脚本配置解析 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -652,7 +655,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -754,7 +757,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q1-SQLserver服务停止不了，死循环。"><span class="nav-number">1.</span> <span class="nav-text">Q1: SQLserver服务停止不了，死循环。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。"><span class="nav-number">2.</span> <span class="nav-text">A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。"><span class="nav-number">3.</span> <span class="nav-text">Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A2-经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件-360-和系统防火墙后，问题解决。"><span class="nav-number">4.</span> <span class="nav-text">A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q3：-Mirror同步驱动报错："><span class="nav-number">5.</span> <span class="nav-text">Q3： Mirror同步驱动报错：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q1-SQLserver服务停止不了，死循环。"><span class="nav-number">1.</span> <span class="nav-text">Q1: SQLserver服务停止不了，死循环。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A1-单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL-agent加入到集群中，问题解决。"><span class="nav-number">2.</span> <span class="nav-text">A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q2-登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。-集群服务均正常。"><span class="nav-number">3.</span> <span class="nav-text">Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。 集群服务均正常。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A2-经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha-sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件-360-和系统防火墙后，重装集群软件，问题依然未解决。-通过替换mirrorha驱动，问题依然存在。。。-最终通过降级到rose-mirror-ha-4-4版本后，问题解决。-实际系统是-window-server-2003-x32bit系统。"><span class="nav-number">4.</span> <span class="nav-text">A2: 经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha.sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件(360)和系统防火墙后，重装集群软件，问题依然未解决。  通过替换mirrorha驱动，问题依然存在。。。 最终通过降级到rose mirror ha 4.4版本后，问题解决。  实际系统是 window server  2003 x32bit系统。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q3：-Mirror同步驱动报错："><span class="nav-number">5.</span> <span class="nav-text">Q3： Mirror同步驱动报错：</span></a></li></ol></div>
             
 
           </div>
