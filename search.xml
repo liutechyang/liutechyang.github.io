@@ -26,19 +26,19 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[Office安装报错解析]]></title>
-    <url>%2FOffice%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E8%A7%A3%E6%9E%90%2F</url>
-    <content type="text"><![CDATA[Q1: Visio2019安装报错：A1: 经过分析排查，是因为系统中安装的有office2007 x86 32位程序导致，解决方案是： 要么卸载office2007，要么安装visio32bit程序。]]></content>
+    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
+    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
+    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。 A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。Q3： Mirror同步驱动报错：]]></content>
       <categories>
-        <category>Microsoft</category>
-        <category>Office</category>
-        <category>Visio</category>
+        <category>Cluster</category>
+        <category>Rose</category>
+        <category>RoseMirrorHA</category>
       </categories>
       <tags>
-        <tag>Microsoft</tag>
-        <tag>Office</tag>
-        <tag>Visio</tag>
+        <tag>双机</tag>
+        <tag>集群</tag>
         <tag>Q&amp;A</tag>
+        <tag>应用切换</tag>
       </tags>
   </entry>
   <entry>
@@ -57,6 +57,22 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Office安装报错解析]]></title>
+    <url>%2FOffice%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E8%A7%A3%E6%9E%90%2F</url>
+    <content type="text"><![CDATA[Q1: Visio2019安装报错：A1: 经过分析排查，是因为系统中安装的有office2007 x86 32位程序导致，解决方案是： 要么卸载office2007，要么安装visio32bit程序。]]></content>
+      <categories>
+        <category>Microsoft</category>
+        <category>Office</category>
+        <category>Visio</category>
+      </categories>
+      <tags>
+        <tag>Microsoft</tag>
+        <tag>Office</tag>
+        <tag>Visio</tag>
+        <tag>Q&amp;A</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[主机号发生变化后的处理意见]]></title>
     <url>%2F%E4%B8%BB%E6%9C%BA%E5%8F%B7%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E5%90%8E%E7%9A%84%E5%A4%84%E7%90%86%E6%84%8F%E8%A7%81%2F</url>
     <content type="text"><![CDATA[Q:服务器机器重启后，hostid发生变化了?A: 如果主机ID变化了，看看用户是否在变化前后，禁用或者启用了网卡，导致网卡数量不对, 这种情况可能会导致主机号发生变化；可以尝试启用或禁用网卡，然后重启服务器或者重启集群服务，主机ID应该会变回去；是否变化前更新了某些硬件驱动，可以尝试卸载相关驱动，如果以上方式尝试过，依旧不行，且变化的ID号不影响具体使用，可以不用理会，如果导致授权不可用，只能重新申请授权了。 PS:主机ID号变化，一般遇到比较多的是用户更换服务器主板、禁用网卡或者启用网卡，或者重装操作系统，更新硬件驱动导致。]]></content>
@@ -65,25 +81,9 @@
         <category>Rose</category>
       </categories>
       <tags>
-        <tag>Q&amp;A</tag>
         <tag>双机</tag>
         <tag>集群</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
-    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
-    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。 A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。Q3： Mirror同步驱动报错：]]></content>
-      <categories>
-        <category>Cluster</category>
-        <category>Rose</category>
-        <category>RoseMirrorHA</category>
-      </categories>
-      <tags>
         <tag>Q&amp;A</tag>
-        <tag>双机</tag>
-        <tag>集群</tag>
-        <tag>应用切换</tag>
       </tags>
   </entry>
   <entry>
@@ -159,11 +159,25 @@
   <entry>
     <title><![CDATA[RoseMirrorHA 5.0-Windows-安装准备_2015-06]]></title>
     <url>%2FRoseMirrorHA-5-0-Windows-%E5%AE%89%E8%A3%85%E5%87%86%E5%A4%87-2015-06%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
       <categories>
         <category>Cluster</category>
         <category>Rose</category>
         <category>RoseMirrorHA</category>
+      </categories>
+      <tags>
+        <tag>双机</tag>
+        <tag>集群</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[RoseHA 9.0-Windows-安装准备_2015-06]]></title>
+    <url>%2FRoseHA-9-0-Windows-%E5%AE%89%E8%A3%85%E5%87%86%E5%A4%87-2015-06%2F</url>
+    <content type="text"><![CDATA[提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+        <category>RoseHA</category>
       </categories>
       <tags>
         <tag>双机</tag>
