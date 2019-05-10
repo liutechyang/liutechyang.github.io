@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[RoseMirrorHA 5.0 for Linux配合Oracle12c配置文档_v2.0-2015-04-29]]></title>
+    <url>%2FRoseMirrorHA-5-0-for-Linux%E9%85%8D%E5%90%88Oracle12c%E9%85%8D%E7%BD%AE%E6%96%87%E6%A1%A3-v2-0-2015-04-29%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[技术支持热线电话查询]]></title>
+    <url>%2F%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81%E7%83%AD%E7%BA%BF%E7%94%B5%E8%AF%9D%E6%9F%A5%E8%AF%A2%2F</url>
+    <content type="text"><![CDATA[红帽技术支持：800-810-2100技术支持：2 2 新技术单 原有技术单1客户服务：3培训：1 Vmware 虚拟化技术支持：4008160688 普通话 1 软件许可licence 1 授前 2 售后 3 Symantec4001204816 1 1 3 veratis 技术支持 电话 MICROSOFT微软：8008203800400-820-3800 微软官方技术支持热线 oracle 技术支持：4008980890 客户服务号 2 2 2 客户服务代码 800-810-0366 8008100365 dell 技术支持热线：800858206044008845117 dell技术支持电话 金牌服务]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[快捷键速查手册]]></title>
+    <url>%2F%E5%BF%AB%E6%8D%B7%E9%94%AE%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C%2F</url>
+    <content type="text"><![CDATA[1.1 QQ输入法截屏工具：crtl+shift+z1.2 命令行方式粘贴复制选中的文档：选中内容，ctrl+ins复制；shift+ins粘贴]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[RoseHA(9.0)for Linux Q&A Demo01]]></title>
     <url>%2FRoseHA-9-0-for-Linux-Q-A-Demo01%2F</url>
     <content type="text"></content>
@@ -11,18 +26,18 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
-    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
-    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。]]></content>
+    <title><![CDATA[Office安装报错解析]]></title>
+    <url>%2FOffice%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99%E8%A7%A3%E6%9E%90%2F</url>
+    <content type="text"><![CDATA[Q1: Visio2019安装报错：A1: 经过分析排查，是因为系统中安装的有office2007 x86 32位程序导致，解决方案是： 要么卸载office2007，要么安装visio32bit程序。]]></content>
       <categories>
-        <category>Cluster</category>
-        <category>Rose</category>
-        <category>RoseMirrorHA</category>
+        <category>Microsoft</category>
+        <category>Office</category>
+        <category>Visio</category>
       </categories>
       <tags>
-        <tag>双机</tag>
-        <tag>集群</tag>
-        <tag>应用切换</tag>
+        <tag>Microsoft</tag>
+        <tag>Office</tag>
+        <tag>Visio</tag>
         <tag>Q&amp;A</tag>
       </tags>
   </entry>
@@ -39,6 +54,36 @@
         <tag>双机</tag>
         <tag>集群</tag>
         <tag>脚本</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[主机号发生变化后的处理意见]]></title>
+    <url>%2F%E4%B8%BB%E6%9C%BA%E5%8F%B7%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E5%90%8E%E7%9A%84%E5%A4%84%E7%90%86%E6%84%8F%E8%A7%81%2F</url>
+    <content type="text"><![CDATA[Q:服务器机器重启后，hostid发生变化了?A: 如果主机ID变化了，看看用户是否在变化前后，禁用或者启用了网卡，导致网卡数量不对, 这种情况可能会导致主机号发生变化；可以尝试启用或禁用网卡，然后重启服务器或者重启集群服务，主机ID应该会变回去；是否变化前更新了某些硬件驱动，可以尝试卸载相关驱动，如果以上方式尝试过，依旧不行，且变化的ID号不影响具体使用，可以不用理会，如果导致授权不可用，只能重新申请授权了。 PS:主机ID号变化，一般遇到比较多的是用户更换服务器主板、禁用网卡或者启用网卡，或者重装操作系统，更新硬件驱动导致。]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+      </categories>
+      <tags>
+        <tag>Q&amp;A</tag>
+        <tag>双机</tag>
+        <tag>集群</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
+    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
+    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功。 A2: 经过排查发现是杀毒软件和防火墙导致，关闭杀毒软件(360)和系统防火墙后，问题解决。Q3： Mirror同步驱动报错：]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+        <category>RoseMirrorHA</category>
+      </categories>
+      <tags>
+        <tag>Q&amp;A</tag>
+        <tag>双机</tag>
+        <tag>集群</tag>
+        <tag>应用切换</tag>
       </tags>
   </entry>
   <entry>
@@ -71,20 +116,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[RoseHAScript]]></title>
-    <url>%2FRoseHAScript%2F</url>
-    <content type="text"><![CDATA[此博客内容适用于实际生产系统，请根据实际情况修改调整。 SybaseScriptDemo01: 12345678910111213141516171819202122su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP&quot; &amp;# ## &quot;sleep SEC(S)&quot; means how many seconds agent wait for sybase ## to start, change &quot;30&quot; to seconds your sybase start use ## # sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP_BS&quot; &amp; sleep 10 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ&quot; &amp; sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ_BS&quot; &amp; sleep 10fi$&#123;out&#125; &quot;[INFO] Start shell &lt;$0&gt; finished.&quot;]]></content>
-      <categories>
-        <category>Cluster</category>
-        <category>Rose</category>
-      </categories>
-      <tags>
-        <tag>双机</tag>
-        <tag>集群</tag>
-        <tag>脚本</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[RoseMirrorHA5.0安装配置维护手册]]></title>
     <url>%2FRoseMirrorHA5.0%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE%E7%BB%B4%E6%8A%A4%E6%89%8B%E5%86%8C%2F</url>
     <content type="text"><![CDATA[快速安装：链接：https://pan.baidu.com/s/1VHVG1cPmwGsOdfOUmPrKoQ提取码：bw6d复制这段内容后打开百度网盘手机App，操作更方便哦 应用配合：链接：https://pan.baidu.com/s/1hHKGKKpBLtJTiKZJC4GcNg提取码：ptmz复制这段内容后打开百度网盘手机App，操作更方便哦 维护文档：链接：https://pan.baidu.com/s/18rofkaI3bvZfnI-gtD4N5w提取码：ap33 复制这段内容后打开百度网盘手机App，操作更方便哦 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
@@ -99,12 +130,40 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[RoseHAScript]]></title>
+    <url>%2FRoseHAScript%2F</url>
+    <content type="text"><![CDATA[此博客内容适用于实际生产系统，请根据实际情况修改调整。 SybaseScriptDemo01: 12345678910111213141516171819202122su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP&quot; &amp;# ## &quot;sleep SEC(S)&quot; means how many seconds agent wait for sybase ## to start, change &quot;30&quot; to seconds your sybase start use ## # sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYNP_BS&quot; &amp; sleep 10 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ&quot; &amp; sleep 20 su - sybase -c &quot;/sybase/sybase/ASE-15_0/install/RUN_LLZYSFTJ_BS&quot; &amp; sleep 10fi$&#123;out&#125; &quot;[INFO] Start shell &lt;$0&gt; finished.&quot;]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+      </categories>
+      <tags>
+        <tag>双机</tag>
+        <tag>集群</tag>
+        <tag>脚本</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Rose替换License授权文件]]></title>
     <url>%2FRose%E6%9B%BF%E6%8D%A2License%E6%8E%88%E6%9D%83%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[RoseMirrorHA(5.0)for Window导入&amp;替换授权：登陆集群并导入授权：1） 打开并登录 RoseMirrorHA 管理界面所要管理的服务器。2） 选中主机视图，右键菜单中选择属性。进入主机参数界面。如下图所示： 3） 进入服务器配置参数界面以后，找到设置注册码选项。拷贝注册码文件至服务器（注册码文件名的格式：主机 ID 号.lic），点击“设置注册码”按钮，对应主机 ID 号打开相应的注册码文件。服务器的注册码文件加载后，检查“有效期”是否显示使用期限（永久注册码为 8 个 9“99999999”；临时注册码为截止有效期“月日年”） 。点击“确定”，完成 License 替换。 输入 license 后，报 license 无效或过期1） 导入的 license 文件名中的 HostID 与主机 HostID 不匹配。2） 申请的 license 与安装产品的版本不一致。 RoseHA(9.0)for Window导入&amp;替换授权：登陆集群并导入授权：1、在 RoseHA 管理界面中，登录服务器节点。2、选中服务器节点，右键菜单中选择属性。进入服务器属性界面。如下图所示： 3、进入服务器属性界面以后，切换至注册码页面。对应主机 hostid，将现有注册码替换成永久注册码 License。点击“设置注册码”按钮，浏览加载对应主机的永久 License 文件。【注意】替换永久 License 文件后，请检查“有效期”是否更换为永久，8 个 9“99999999”。 RoseHA(9.0)for Linux导入&amp;替换授权： 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
       <categories>
         <category>Cluster</category>
         <category>Rose</category>
+      </categories>
+      <tags>
+        <tag>双机</tag>
+        <tag>集群</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[RoseMirrorHA 5.0-Windows-安装准备_2015-06]]></title>
+    <url>%2FRoseMirrorHA-5-0-Windows-%E5%AE%89%E8%A3%85%E5%87%86%E5%A4%87-2015-06%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Cluster</category>
+        <category>Rose</category>
+        <category>RoseMirrorHA</category>
       </categories>
       <tags>
         <tag>双机</tag>
