@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[RoseMirrorHA配置完成后，测试验证集群功能(Oracle)]]></title>
+    <url>%2FRoseMirrorHA%E9%85%8D%E7%BD%AE%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%8C%E6%B5%8B%E8%AF%95%E9%AA%8C%E8%AF%81%E9%9B%86%E7%BE%A4%E5%8A%9F%E8%83%BD-Oracle%2F</url>
+    <content type="text"><![CDATA[博文说明：此博文仅用于(RoseMirrorHA配置完成后，测试验证集群功能(Oracle))使用指导参考，请根据实际情况调整，如对此内容有所疑问，请按照博文末尾联系方式与博主沟通确认，谢谢。 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[升级Linux系统OpenSSH]]></title>
+    <url>%2F%E5%8D%87%E7%BA%A7Linux%E7%B3%BB%E7%BB%9FOpenSSH%2F</url>
+    <content type="text"><![CDATA[博文说明：此博文仅用于(解决因绿盟扫码系统OpenSSH高危漏洞达十个左右，通过升级OpenSSH最新版本解决漏洞问题)使用指导参考，请根据实际情况调整，如对此内容有所疑问，请按照博文末尾联系方式与博主沟通确认，谢谢。 版本说明，查询OpenSSH版本：操作系统：Centos6.5x64bit[root@centos6 yum.repos.d]# ssh -VOpenSSH_5.3p1, OpenSSL 1.0.1e-fips 11 Feb 2013 安装Telnet，解决异常情况下，卸载完SSH连不上操作系统的问题。yum -y install telnet-server* service iptables stopchkconfig iptables offsetenforce 0 允许root远程连接：将其中disable字段的yes改为no以启用telnet服务[root@centos6 yum.repos.d]# vi /etc/xinetd.d/telnet default: ondescription: The telnet server serves telnet sessions; it uses \unencrypted username/password pairs for authentication.service telnet{ flags = REUSE socket_type = stream wait = no user = root server = /usr/sbin/in.telnetd log_on_failure += USERID disable = no} 启动Telnet:允许root用户通过telnet登录mv /etc/securetty /etc/securetty.old service xinetd startchkconfig xinetd on 查询现有包版本并安装依赖包：openssl versionrpm -q zlib [root@centos6 yum.repos.d]# rpm -q zlib-develpackage zlib-devel is not installed[root@centos6 yum.repos.d]# yum -y install zlib-devel yum install -y gcc openssl-devel pam-devel rpm-build pam-devel 卸载原生Openssh:rpm -e rpm -qa | grep openssh –nodeps 安装Openssh升级包，并配置：tar zxvf openssh-7.9p1.tar.gz [root@centos6 openssh-7.9p1]#./configure –prefix=/usr –sysconfdir=/etc/ssh –with-pam –with-zlib –with-md5-passwords –with-tcp-wrappers makemake install sed -i ‘s/#PermitRootLogin prohibit-password/PermitRootLogin\ yes/g’ /etc/ssh/sshd_config sed -i ‘s/#PermitEmptyPasswords(.*)/PermitEmptyPasswords\ no/g’ /etc/ssh/sshd_config cp contrib/redhat/sshd.init /etc/init.d/sshd 启动SSH：chkconfig –add sshdchkconfig sshd on service sshd start service sshd restart chkconfig –list sshd 查询新版本：ssh -V 更新新算法：echo ‘KexAlgorithms curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1,diffie-hellman-group1-sha1’ &gt;&gt; /etc/ssh/sshd_config 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>OpenSSH</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>SSH</tag>
+        <tag>漏洞补丁</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[RoseHA10技术白皮书]]></title>
     <url>%2FRoseHA10%E6%8A%80%E6%9C%AF%E7%99%BD%E7%9A%AE%E4%B9%A6%2F</url>
     <content type="text"><![CDATA[博文说明：此博文仅用于(RoseHA10技术白皮书)使用指导参考，请根据实际情况调整，如对此内容有所疑问，请按照博文末尾联系方式与博主沟通确认，谢谢。 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
@@ -31,7 +50,7 @@
   <entry>
     <title><![CDATA[Experimental record]]></title>
     <url>%2FExperimental-record%2F</url>
-    <content type="text"><![CDATA[Window server 2012 r2 安装oracle rac 11.2.0.4Window server 2008 r2 安装oracle rac 11.2.0.4PlSql客户端软件安装]]></content>
+    <content type="text"><![CDATA[以安装验证：Window server 2012 r2 安装oracle rac 11.2.0.4Window server 2008 r2 安装oracle rac 11.2.0.4PlSql客户端软件安装 待安装验证：window server 2012 安装MacFee,使用Sql 2016数据库: 测试并搭建KMS激活服务器，以及WSUS更新服务器： 数据库冷备份方式：]]></content>
   </entry>
   <entry>
     <title><![CDATA[实验系统常规设计说明]]></title>
@@ -72,7 +91,7 @@
   <entry>
     <title><![CDATA[博文更新记录]]></title>
     <url>%2F%E5%8D%9A%E6%96%87%E6%9B%B4%E6%96%B0%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[博文说明：此博文仅用于()使用指导参考，请根据实际情况调整，如对此内容有所疑问，请按照博文末尾联系方式与博主沟通确认，谢谢。 常用博文模板tags: - 双机 - 集群 categories: - Cluster - Rose tags: - Microsoft - 系统 categories: - Microsoft - System top: 3 更新博文使用软碟通刻录U盘安装win10系统以及刻录系统到空光盘使用说明-v2Window操作系统激活-2019-LY-v2Window操作系统激活-2019-LY-v2使用软碟通刻录U盘安装win10系统以及刻录系统到空光盘使用说明-v2博文更新记录微软Window产品开放式授权许可注册流程-2019-v5Teamviewer远程连接服务器Office word使用之批量改变图片大小Window server 2016系统安装技术支持热线电话查询快捷键速查手册RoseHA(9.0)for Linux Q&amp;A Demo01RoseMirrorHAScriptOffice安装报错解析主机号发生变化后的处理意见RoseMirrorHA(5.0)for Window Q&amp;A Demo01RoseMirrorHA(5.0)for Window监控脚本配置解析RoseMirrorHA 5.0 for Linux配合Oracle12c配置文档_v2.0-2015-04-29Visio 2019安装RoseHA9.0安装配置维护手册RoseHAScriptRose替换License授权文件RoseMirrorHA5.0安装配置维护手册RoseMirrorHA6.0安装配置维护手册RoseMirrorHA 5.0-Windows-安装准备_2015-06RoseHA 9.0-Windows-安装准备_2015-06GoldenSafeMirrorHA技术白皮书-v2Oracle ORA-12514:TNS 监听问题GoldenSafeHA技术白皮书RoseHA10技术白皮书 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+    <content type="text"><![CDATA[博文说明：此博文仅用于(博文导航)使用指导参考，请根据实际情况调整，如对此内容有所疑问，请按照博文末尾联系方式与博主沟通确认，谢谢。 快速导航tags: - 双机 - 集群 - 系统 categories: - Cluster - Rose - System - Window - Linux - Database - Oracle - SqlServer - Backup - BE - NBU 更新博文SystemWindow使用软碟通刻录U盘安装win10系统以及刻录系统到空光盘使用说明-v2Window操作系统激活-2019-LY-v2Window操作系统激活-2019-LY-v2使用软碟通刻录U盘安装win10系统以及刻录系统到空光盘使用说明-v2博文更新记录微软Window产品开放式授权许可注册流程-2019-v5Teamviewer远程连接服务器Office word使用之批量改变图片大小Window server 2016系统安装技术支持热线电话查询快捷键速查手册RoseHA(9.0)for Linux Q&amp;A Demo01RoseMirrorHAScriptOffice安装报错解析主机号发生变化后的处理意见RoseMirrorHA(5.0)for Window Q&amp;A Demo01RoseMirrorHA(5.0)for Window监控脚本配置解析RoseMirrorHA 5.0 for Linux配合Oracle12c配置文档_v2.0-2015-04-29Visio 2019安装RoseHA9.0安装配置维护手册RoseHAScriptRose替换License授权文件RoseMirrorHA5.0安装配置维护手册RoseMirrorHA6.0安装配置维护手册RoseMirrorHA 5.0-Windows-安装准备_2015-06RoseHA 9.0-Windows-安装准备_2015-06GoldenSafeMirrorHA技术白皮书-v2Oracle ORA-12514:TNS 监听问题GoldenSafeHA技术白皮书RoseHA10技术白皮书升级Linux系统OpenSSHRoseMirrorHA配置完成后，测试验证集群功能(Oracle) 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
   </entry>
   <entry>
     <title><![CDATA[微软Window产品开放式授权许可注册流程-2019-v5]]></title>
@@ -128,19 +147,17 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
-    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
-    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。 集群服务均正常。Mirror同步驱动报错： A2: 经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha.sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件(360)和系统防火墙后，重装集群软件，问题依然未解决。 通过替换mirrorha驱动，问题依然存在。。。 最终通过降级到rose mirror ha 4.4版本后，问题解决。 实际系统是 window server 2003 x32bit系统。 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
+    <title><![CDATA[主机号发生变化后的处理意见]]></title>
+    <url>%2F%E4%B8%BB%E6%9C%BA%E5%8F%B7%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E5%90%8E%E7%9A%84%E5%A4%84%E7%90%86%E6%84%8F%E8%A7%81%2F</url>
+    <content type="text"><![CDATA[Q:服务器机器重启后，hostid发生变化了?A: 如果主机ID变化了，看看用户是否在变化前后，禁用或者启用了网卡，导致网卡数量不对, 这种情况可能会导致主机号发生变化；可以尝试启用或禁用网卡，然后重启服务器或者重启集群服务，主机ID应该会变回去；是否变化前更新了某些硬件驱动，可以尝试卸载相关驱动，如果以上方式尝试过，依旧不行，且变化的ID号不影响具体使用，可以不用理会，如果导致授权不可用，只能重新申请授权了。 PS:主机ID号变化，一般遇到比较多的是用户更换服务器主板、禁用网卡或者启用网卡，或者重装操作系统，更新硬件驱动导致。]]></content>
       <categories>
         <category>Cluster</category>
         <category>Rose</category>
-        <category>RoseMirrorHA</category>
       </categories>
       <tags>
+        <tag>Q&amp;A</tag>
         <tag>双机</tag>
         <tag>集群</tag>
-        <tag>Q&amp;A</tag>
-        <tag>应用切换</tag>
       </tags>
   </entry>
   <entry>
@@ -189,17 +206,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[主机号发生变化后的处理意见]]></title>
-    <url>%2F%E4%B8%BB%E6%9C%BA%E5%8F%B7%E5%8F%91%E7%94%9F%E5%8F%98%E5%8C%96%E5%90%8E%E7%9A%84%E5%A4%84%E7%90%86%E6%84%8F%E8%A7%81%2F</url>
-    <content type="text"><![CDATA[Q:服务器机器重启后，hostid发生变化了?A: 如果主机ID变化了，看看用户是否在变化前后，禁用或者启用了网卡，导致网卡数量不对, 这种情况可能会导致主机号发生变化；可以尝试启用或禁用网卡，然后重启服务器或者重启集群服务，主机ID应该会变回去；是否变化前更新了某些硬件驱动，可以尝试卸载相关驱动，如果以上方式尝试过，依旧不行，且变化的ID号不影响具体使用，可以不用理会，如果导致授权不可用，只能重新申请授权了。 PS:主机ID号变化，一般遇到比较多的是用户更换服务器主板、禁用网卡或者启用网卡，或者重装操作系统，更新硬件驱动导致。]]></content>
+    <title><![CDATA[RoseMirrorHA(5.0)for Window Q&A Demo01]]></title>
+    <url>%2FRoseMirrorHA-5-0-for-Window-Q-A-Demo01%2F</url>
+    <content type="text"><![CDATA[说明： 针对Window平台环境，集群切换过程中各种异常问题解析。 Q1: SQLserver服务停止不了，死循环。切换过程中，SQLserver服务停止不了，死循环。 A1: 单机测试后，发现是Sql依赖服务未配置到集群中导致停止Sql主服务卡死，将SQL agent加入到集群中，问题解决。Q2: 登陆控制台后，发现Rose数据同步状态异常，心跳线一会绿色，一会灰色。一直反复提示目标连接成功，源连接成功，目标停止成功，源停止成功，就是不同步数据。 集群服务均正常。Mirror同步驱动报错： A2: 经过排查发现是杀毒软件和防火墙导致，并且drivers里mirrorha.sys这个驱动缺失，怀疑是杀毒软件引起，关闭杀毒软件(360)和系统防火墙后，重装集群软件，问题依然未解决。 通过替换mirrorha驱动，问题依然存在。。。 最终通过降级到rose mirror ha 4.4版本后，问题解决。 实际系统是 window server 2003 x32bit系统。 提供通用软件售前技术咨询，售后技术维保，软件故障排查，解决方案，软件技术支持兼职等业务，欢迎来询。电话&amp;微信 ：18046508828QQ ： 1710484168软件技术支持范围数据库，系统，双机、集群，虚拟化，存储，备份，杀毒等数据库：Oracle,Mysql,Sql server,sybase…系统：Window，Linux,Aix…双机、集群：Rose,GoldenSafe, Lifekeeper,NEC,clusterware,联鼎LanderVault…杀毒：瑞星，卡巴，Symantec SEP,诺顿…虚拟化:Vmware,Hyper-v…备份：SymantecBE,NBU…信阳毛尖，自家茶园，好山好水好茶好客，有喜欢喝茶的朋友，欢迎联系，谢谢。]]></content>
       <categories>
         <category>Cluster</category>
         <category>Rose</category>
+        <category>RoseMirrorHA</category>
       </categories>
       <tags>
+        <tag>Q&amp;A</tag>
         <tag>双机</tag>
         <tag>集群</tag>
-        <tag>Q&amp;A</tag>
+        <tag>应用切换</tag>
       </tags>
   </entry>
   <entry>
